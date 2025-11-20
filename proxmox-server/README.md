@@ -7,7 +7,7 @@ Hardware
 - RAM: 32 GB  
 - Storage:
   - 2x 1 tb ssd in RAID 1 configuration
-  - 2x 4tb WD Hard drives NAS targets mounted VIA cifs RAID 1
+  - 2x 4tb Western Digital Hard drives NAS targets mounted VIA cifs RAID 1
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 Active Virtualized devices
 | Name | Type | OS | Purpose | VLAN |
@@ -76,7 +76,8 @@ Provides SMB shares for Proxmox, Navidrome, backups, and general storage.
 - Runs as full VM (Debian + OMV)  
 - VLAN 10  
 - Exports SMB share  
-- CIFS mount used by Navidrome and Proxmox  
+- CIFS mount used by Navidrome and Proxmox
+- Runs in RAID 1 Configuration using 2 4tb WD HDD
 
 **Dependencies:**  
 - Needs to boot before Navidrome for stable library access
