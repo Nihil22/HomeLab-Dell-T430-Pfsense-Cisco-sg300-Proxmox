@@ -1,4 +1,0 @@
-This section documents my primary virtualization stack running on a Dell PowerEdge T430.  
-The server hosts all core services in my homelab and integrates with pfSense (routing/firewall)  
-and my Cisco SG300 switch (VLAN segmentation).
---------------------------------------------------------------------------------------------------------
