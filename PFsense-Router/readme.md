@@ -49,7 +49,7 @@ pfSense serves as the primary router, firewall, VLAN manager, and DHCP/DNS contr
 
 pfSense provides DHCP for all VLANs:
 
-### **VLAN 10 (Servers)**
+### **VLAN 10 (Server)**
 - Range: `192.168.10.0 -192.168.10.200`  
 - Devices: Proxmox VMs, Pi-hole, Navidrome, OMV  
 
@@ -70,14 +70,14 @@ pfSense provides DHCP for all VLANs:
 ## Firewall Rules
 
 ### **General Philosophy**
-- Servers VLAN (10) should NOT be reachable from Lab VLANs  
+- Server VLAN (10) should NOT be reachable from Lab VLANs  
 - Lab VLANs (99) should be isolated from LAN and only able to acess Server VLAN  
 - DNS permitted through Pi-hole  
 - Internet allowed for all VLANs unless testing isolation  
 
 ### **Sample Rulesets**
 
-#### **VLAN 10 (Servers) Rules**
+#### **VLAN 10 (Server) Rules**
 ![image alt]() 
 
 #### **VLAN 20 (Lab) Rules**
