@@ -5,7 +5,7 @@ It acts as the central switch connecting pfSense, Proxmox, NAS, and lab devices.
 
 ---
 
-## 🖥️ Hardware Overview
+## Hardware Overview
 
 **Switch:** Cisco SG300-52 (Managed L3 Switch)  
 - 52 Gigabit Ethernet ports  
@@ -19,7 +19,7 @@ Primary switch handling all VLANs, Physical connections, interconnections, and P
 
 ---
 
-## 🔀 VLAN Configuration
+## VLAN Configuration
 
 ### **VLANs Used**
 | VLAN | Name      | Purpose                    |
@@ -30,7 +30,7 @@ Primary switch handling all VLANs, Physical connections, interconnections, and P
 | 99   | VPN       | OpenVPN connection |
 ---
 
-## 🔌 Port Configuration
+## Port Configuration
 
 ### **Proxmox Port (Trunk)**
 This port carries all VLANs to the Proxmox host.
@@ -55,7 +55,7 @@ pfSense handles VLAN interfaces internally and passes traffic to the SG300.
 
 ---
 
-## 📊 VLAN Trunk Logic (Simple Overview)
+## VLAN Trunk Logic (Simple Overview)
 Switch handles tagging:
 
 - SG300 trunk → Proxmox (`vmbr0`)  
