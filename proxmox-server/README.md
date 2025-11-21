@@ -26,9 +26,7 @@ This section documents my primary virtualization stack running on a Dell PowerEd
   - **10** → Server/Services  
   - **20** → Lab/Test (for Cybersecurity VMs and Labs) 
 - Bridges:
-  - `vmbr0` → management  
-  - `vmbr1` → VLAN 10  
-  - `vmbr2` → VLAN 20  
+  - `vmbr0` → management/Services VLAN tagging occurs at Vm level  
 
 **Notes:**  
 - Uses LXC for lightweight services (Pi-hole, Navidrome) and VMs for more stable (OMV)
