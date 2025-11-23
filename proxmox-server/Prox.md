@@ -24,7 +24,8 @@ This section documents my primary virtualization stack running on a Dell PowerEd
 - Connects to pfSense and SG300 through a trunk port  
 - VLANs used:
   - **10** → Server/Services  
-  - **20** → Lab/Test (for Cybersecurity VMs and Labs) 
+  - **20** → Lab/Test (for Cybersecurity VMs and Labs)
+  - **99** VPN connection
 - Bridges:
   - `vmbr0` → management/Services VLAN tagging occurs at Vm level  
 
