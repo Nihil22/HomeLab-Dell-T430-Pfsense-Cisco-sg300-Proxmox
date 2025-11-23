@@ -102,17 +102,17 @@ pfSense provides DHCP for all VLANs:
 
 ---
 
-## VPN (Planned)
+## VPN
 
 ### **OpenVPN **
 - Single VPN endpoint  
-- Only exposes hardened OpenVPN port  
-- Allows access to:
+- Only exposes OpenVPN port (1195)  
+- Allows access to server VLAN and services:
   - Server and it's services   
 
 ### **Security Approach**
-- Certificate-based auth  
-- No password login  
+- Two-Factor Authentication
+- Certificate & Password based authentication  
 - IP whitelist to limit connection sources  
 
 
